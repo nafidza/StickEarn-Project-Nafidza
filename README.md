@@ -359,8 +359,7 @@ stickearn-billboard-exposure-analysis/
 │   ├── 01_data_cleaning.sql
 │   ├── 02_mobility_eda.sql
 │   ├── 03_exposure_estimation.sql
-│   ├── 04_exposure_time_pattern.sql
-│   └── 05_opportunity_gap.sql
+│   └── 04_opportunity_gap.sql
 └── notebooks/
     └── visualization scripts
 ```
