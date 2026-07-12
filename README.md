@@ -435,7 +435,7 @@ stickearn-billboard-exposure-analysis/
 └── stickearn_notebook.ipynb
 ```
 
-*Spreadsheet: [[link]](https://drive.google.com/drive/folders/1VIoAX0xV0WJ6nh-8emYAeFx0wI1w9NU-?usp=sharing)*
+*Spreadsheet: [link](https://drive.google.com/drive/folders/1VIoAX0xV0WJ6nh-8emYAeFx0wI1w9NU-?usp=sharing)*
 *SQL: [Link](sql/)*
 *Python: [Link](stickearn_notebook.ipynb)*
-*Google Slides: [[link]](https://docs.google.com/presentation/d/1TcoTYtKHPS9VIBv5h1x4AlPgkgCMqzI6a9a7DypJLns/edit?usp=sharing)*
+*Google Slides: [link](https://docs.google.com/presentation/d/1TcoTYtKHPS9VIBv5h1x4AlPgkgCMqzI6a9a7DypJLns/edit?usp=sharing)*
