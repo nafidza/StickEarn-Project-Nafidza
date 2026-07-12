@@ -160,3 +160,19 @@ FROM `stickearn-test-502018.stickearn_test.exposure_summary_100m`
 WHERE reach >= 37
 ORDER BY frequency DESC
 LIMIT 10;
+
+------------------------------------------------------------------------
+-- 06. TEMPORAL EXPOSURE ANALYSIS (TIME-OF-DAY PERFORMANCE)
+-- Analyze how billboard exposure (impressions and reach) fluctuates 
+-- across different hours of the day.
+------------------------------------------------------------------------
+SELECT
+  billboard_id,
+  billboard_name,
+  EXTRACT(HOUR FROM datetime) AS hour_of_day,
+  COUNT(*) AS impressions,
+  COUNT(DISTINCT device_id) AS reach
+FROM `stickearn-test-502018.stickearn_test.exposure_proximity`
+WHERE within_100m = TRUE
+GROUP BY billboard_id, billboard_name, hour_of_day
+ORDER BY billboard_id, hour_of_day;
