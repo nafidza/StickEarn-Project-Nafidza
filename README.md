@@ -235,11 +235,27 @@ Each billboard was plotted on a reach (x-axis) vs. frequency (y-axis) scatter, d
 
 **Insight — Premium & Awareness Type:** Both peak at 10 AM, consistent with their shared "high reach" characteristic following the general commercial peak.
 
-**Insight — Recall Type:** Peaks earlier, at 6 AM, consistent with a hypothesized morning commuter pattern. **Important caveat:** frequency (the metric defining this category) is calculated as an aggregate ratio across the full day, not measured within a single hour. The 6 AM peak reflects highest impression *volume* at that hour for this category — it does not, by itself, prove that the same devices are repeatedly passing within that specific hour. Validating the "repeat commuter" hypothesis with confidence would require multi-day data to confirm the same devices recur at the same location across different days.
+**Insight — Recall Type:** Peaks earlier, at 6 AM, consistent with a hypothesized morning commuter pattern. Important caveat: frequency (the metric defining this category) is calculated as an aggregate ratio across the full day, not measured within a single hour. The 6 AM peak reflects highest impression volume at that hour for this category — it does not, by itself, prove that the same devices are repeatedly passing within that specific hour. Validating the "repeat commuter" hypothesis with confidence would require multi-day data to confirm the same devices recur at the same location across different days.
 
-**Insight — Underperforming spike at 7 PM:** Initially suspected as noise from a small number of billboards, further investigation confirmed contribution was spread across **10+ billboards**, with a majority located in the **Bekasi corridor** — consistent with an evening commuter-return pattern toward residential areas on the city's periphery.
 
-**Why It Matters (Business Recommendation):** Billboards classified as "Underperforming" in daily aggregate should **not be automatically deprioritized** — several show a specific, legitimate exposure window (evening commute) suited to community/local-targeted campaigns rather than general awareness campaigns. This nuance would be lost without hour-level analysis.
+> **Insight — Underperforming spike at 7 PM**
+>
+> Initial inspection suggested this spike was broadly distributed across the Underperforming category. Deeper verification — cross-checking category-level averages against individual contributing billboards — revealed two separate findings:
+> 1. Among the unfiltered top-10 billboards by impressions at 7 PM (across all categories), the majority are located in the Bekasi corridor — indicating a geographic, cross-category evening commuter-return pattern, not one specific to the Underperforming category.
+> 2. Within the Underperforming category specifically, only 4 of 23 billboards (17%) recorded any activity at 7 PM, with contributions fairly evenly split among them (no single billboard dominating). The remaining 19 billboards in this category show zero recorded impressions at this hour.
+> 
+> **Verification detail — Underperforming billboards active at hour 19:**
+>
+> | Billboard | Impressions |
+> |---|---|
+> | Jl. Apel 1 Blok A1 No.10 - Bekasi | 6 |
+> | Jl. Apel 1 Blok A1 No.10 A - Bekasi | 6 |
+> | Jl. Raya Jatimekar No.36J - Bekasi | 5 |
+> | Jl. Kamal Muara No.88 - Jakarta Utara | 1 |
+>
+> *4 of 23 Underperforming billboards (17%) show activity at hour 19; contribution is fairly even (not driven by a single outlier), but the category-level average of 4.50 does not represent a category-wide pattern. The evening spike is therefore better characterized as a location-specific phenomenon (Bekasi/North Jakarta corridor) rather than a defining trait of the Underperforming category as a whole.*
+
+**Why It Matters (Business Recommendation — revised):** Rather than generalizing an evening-campaign strategy to the entire Underperforming category, this finding points to a **small, specific set of billboards** (primarily in the Bekasi/North Jakarta corridor) worth evaluating individually for evening/community-targeted campaigns. This nuance — visible only through hour-level and per-billboard verification, not category averages alone — underscores the importance of validating aggregate patterns against individual contributing data points before generalizing a recommendation.
 
 ### 9.3 Scope Decision: Per-Billboard Hourly Heatmap (Not Included)
 
@@ -298,7 +314,7 @@ The top 30 opportunity gap zones were further segmented by distance to the neare
 
 **Pricing:** Tiered pricing anchored to reach-frequency classification — Premium billboards justify top rates; Awareness/Recall types priced according to campaign-fit rather than a single volume metric; Underperforming billboards reviewed case-by-case rather than blanket-discounted.
 
-**Targeting & Scheduling:** Ad flighting concentrated around the 10-11 AM commercial peak for general campaigns; Recall Type billboards aligned with the 6 AM commuter window; Underperforming billboards in residential-adjacent corridors (e.g., Bekasi) repositioned toward community/local-targeted campaigns leveraging their 7 PM evening window, rather than dismissed as low-value.
+**Targeting & Scheduling:** Ad flighting concentrated around the 10-11 AM commercial peak for general campaigns; Recall Type billboards aligned with the 6 AM commuter window; a small subset of specific billboards in the Bekasi/North Jakarta corridor — identified through per-billboard verification rather than category-wide generalization — show a legitimate 7 PM evening window suited to community/local-targeted campaigns, warranting individual evaluation rather than a blanket Underperforming-category strategy.
 
 **Expansion:** Near-field opportunity zones (500m-1,500m from existing billboards) prioritized for feasibility surveys as low-risk, fast-to-execute candidates; far-field zones (>3,000m) treated as longer-horizon strategic bets pending further market validation.
 
@@ -326,6 +342,7 @@ Extending this methodology beyond Jakarta requires: **(1)** city-specific radius
 - Impressions are counted without temporal deduplication — each qualifying GPS point counts as one impression, following standard OOH industry convention, though this is a deliberate methodological choice worth noting.
 
 **Scope Boundaries**
+- The initial hypothesis that the Underperforming category's 7 PM exposure spike was broadly distributed across the category was revised after per-billboard verification revealed it was driven by only 4 of 23 billboards (17%) within that category. This correction is documented as an example of the verification process applied throughout this analysis — aggregate/category-level patterns were checked against individual contributing data points before being generalized into recommendations.
 - Granular per-billboard hourly heatmaps were not included in this submission — noted as a potential future enhancement for an operational dashboard tool, rather than a gap in the current strategic analysis.
 - Composite scoring (RFM-style) was considered but not used for billboard classification — quadrant-based reach-frequency classification was judged more interpretable at this scale (100 billboards).
 
